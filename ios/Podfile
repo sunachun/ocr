@@ -1,4 +1,5 @@
 # Uncomment this line to define a global platform for your project
+use_frameworks!
 platform :ios, '11.0'
 
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
@@ -26,6 +27,8 @@ end
 require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
 
 flutter_ios_podfile_setup
+
+pod 'FirebaseAuth', '>= 9.6.0'
 
 target 'Runner' do
   use_frameworks!
